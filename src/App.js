@@ -28,7 +28,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         {expenses.map(expense => {
-         return <ExpenseItem title={expense.title} amount={expense.amount} date={expense.date}></ExpenseItem>
+         return <ExpenseItem title={expense.title} amount={expense.amount} date={expense.date}/>
         })}
       </header>
     </div>
