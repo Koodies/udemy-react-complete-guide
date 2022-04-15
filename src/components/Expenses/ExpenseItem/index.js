@@ -1,6 +1,7 @@
 import ExpenseDate from '../ExpenseDate'
 import Card from '../../Card'
 import './index.css'
+import ExpensesList from '../ExpensesList'
 
 function ExpenseItem(props) {
     const { title, date, amount } = props.expense
