@@ -3,7 +3,7 @@ import Card from '../../Card'
 import './index.css'
 
 function ExpenseItem(props) {
-    const { title, date, amount } = props
+    const { title, date, amount } = props.expense
 
     return (
         <Card className='expense-item'>

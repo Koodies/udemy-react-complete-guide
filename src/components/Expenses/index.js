@@ -14,7 +14,7 @@ function Expenses(props) {
         <Card className="expenses">
             <ExpensesFilter selected={filteredYear} filterByYear={filterByYearHandler} />
             {expenses.map(expense => (
-                <ExpenseItem title={expense.title} amount={expense.amount} date={expense.date} />
+                <ExpenseItem expense={expense} />
             ))}
         </Card>
     )
