@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+.main-head {
+  grid-area: header;
+  height: 50px;
+}
+
+.content {
+  grid-area: content;
+}
+
+.left-side {
+  grid-area: left-sidebar;
+}
+
+.right-side {
+  grid-area: right-sidebar;
+}
+
+.wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-areas: 
+      "header"
+      "nav"
+      "content"
+      "footer";
+}
+
+@media (min-width: 700px) {
+  .wrapper {
+      padding-left: 50px;
+      padding-right: 50px;
+      grid-template-columns: 0.5fr 3fr 0.5fr;
+      grid-template-areas:
+          "header header header"
+          "left-sidebar content right-sidebar"
+          "left-sidebar footer right-sidebar"
+  }
+}

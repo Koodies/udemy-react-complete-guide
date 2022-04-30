@@ -1,0 +1,11 @@
+.form {
+    display: grid;
+    grid-template-columns: 10px auto 10px;
+}
+
+.form > label, .form > input, .form > button {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
